@@ -12,4 +12,35 @@ body {
     height: 100vh;  
 } 
  
+.carousel{
+  margin: 100px auto; 
+  width: 90%;
+  display: flex;
+  overflow-x: auto;
+}
+.group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 15s infinite linear;
+  padding-left: 1em;
+}
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+.card{
+  flex: 0 0 8em;
+  height: 10em;
+  padding:1em; 
+  font-size: 3rem;
+  border-radius: .2em;
+  text-align: center;
+  align-content:center;
+  border: none;
+}
  
+@keyframes spin{
+  from {translate: 0;}
+  to{translate: -100%;}
+}
